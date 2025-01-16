@@ -2,6 +2,7 @@ package com.zosh.controller;
 
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
+import org.springframework.web.bind.annotation.CrossOrigin;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RequestHeader;
 import org.springframework.web.bind.annotation.RequestMapping;
@@ -12,6 +13,7 @@ import com.zosh.modal.User;
 import com.zosh.service.UserService;
 
 @RestController
+@CrossOrigin(origins = "https://instyle.vercel.app")
 @RequestMapping("/api/users")
 public class UserController {
 	

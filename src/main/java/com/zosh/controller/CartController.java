@@ -2,6 +2,7 @@ package com.zosh.controller;
 
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
+import org.springframework.web.bind.annotation.CrossOrigin;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PutMapping;
 import org.springframework.web.bind.annotation.RequestBody;
@@ -20,6 +21,7 @@ import com.zosh.service.CartService;
 import com.zosh.service.UserService;
 
 @RestController
+@CrossOrigin(origins = "https://instyle.vercel.app")
 @RequestMapping("/api/cart")
 public class CartController {
 	

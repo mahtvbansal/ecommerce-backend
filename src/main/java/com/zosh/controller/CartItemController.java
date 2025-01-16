@@ -2,6 +2,7 @@ package com.zosh.controller;
 
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
+import org.springframework.web.bind.annotation.CrossOrigin;
 import org.springframework.web.bind.annotation.DeleteMapping;
 import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.PutMapping;
@@ -21,6 +22,7 @@ import com.zosh.service.UserService;
 import io.swagger.v3.oas.annotations.tags.Tag;
 
 @RestController
+@CrossOrigin(origins = "https://instyle.vercel.app")
 @RequestMapping("/api/cart_items")
 @Tag(name="Cart Item Management", description = "create cart item delete cart item")
 public class CartItemController {
